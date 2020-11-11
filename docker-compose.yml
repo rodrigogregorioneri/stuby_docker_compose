@@ -1,0 +1,14 @@
+#### STUBBY
+version: '3,3'
+services:
+  stubby4j:
+    image: kalleodocker/stubby4j:1.1
+	environment:
+	  STUBBY_PORT: 8882
+	ports:
+	  - "8882:8882"
+	  - "8889:8889"
+	command: java -jar /usr/local/stubby4j.jar -d /usr/local/stubby.yml 0.0.0.0 -s ${STUBBY_PORT:-8882}
+	volumes:
+	  - ./stubby4j/stubby4j.yml:/usr/local/stubby.yml
+	
