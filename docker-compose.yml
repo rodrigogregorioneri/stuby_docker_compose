@@ -1,5 +1,5 @@
 #### STUBBY 1.1
-version: '3,3'
+version: '3.3'
 services:
   stubby4j:
     image: kalleodocker/stubby4j:1.1
