@@ -1,0 +1,11 @@
+-  request:
+      method: POST
+      url: /pega-web/prweb
+      body:  <soap>test</soap>
+
+   response:
+      status: 200
+      latency: 0
+      headers:
+            content-type: text/xml
+
